@@ -1,16 +1,13 @@
-"""
-se um arquivo txt baixado do cvat estiver sem anotações sera eliminado junto com a imagem asociada, falta escalar para varias pastas
-"""
-
-
 import os
 import numpy as np
 HOME = os.getcwd()
 print("HOME:", HOME)
-dir_path = "/home/ernesto/Downloads/666/obj_train_data/"
+dir_path = "/media/ernesto/ANTONIETTA/data-vita-saci-rgb/desenrosco/615/"
 files = os.listdir(dir_path)
 pesos=np.array([0,0])
 
+
+#for (dirpath, dirnames, filenames) in os.walk(dir_path): # obtendo caminho atual, diretorios e ficheiros respetivamente
 for f in os.listdir(dir_path): # percorrer ficheiros em cada diretorio (dirpath)
         basename = os.path.basename(f)
         file_name = os.path.splitext(basename)[0]

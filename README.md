@@ -1,1 +1,4 @@
-# sorteio_dataset_x_validation_y_train
+### Editar dataset do cvat
+## 1. Anotar no cvat todas as labels e em paralelo criar um arquivo txt com os dados de inicio-fim (label)
+##
+

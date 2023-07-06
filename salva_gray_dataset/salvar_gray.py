@@ -3,7 +3,9 @@ import shutil
 from PIL import Image
 HOME = os.getcwd()
 #nome do dataset com pastas de videos
-name_dataset = "/home/ernesto/Downloads/novos-intelbras/rodada-5"
+#name_dataset = "/home/ernesto/Downloads/novos-intelbras/rodada-5"
+name_dataset = "/media/ernesto/ANTONIETTA/data-vita-saci-rgb/29/train"
+#name_dataset = "/media/ernesto/ANTONIETTA/data-vita-saci-rgb/29/valid"
 dir_path = name_dataset+"/"
 dir_path_gray = name_dataset+"-gray/"
 print(dir_path_gray)
@@ -42,3 +44,4 @@ for (dirpath, dirnames, filenames) in os.walk(dir_path): # obtendo caminho atual
                         shutil.copyfile(src_path_txt, dst_path)
 
 
+soma_treino=45+342+1412+2122+344+2102+1761+1218+123+1046+1136+74+2338+457+248+1231
